@@ -4,6 +4,7 @@ export const Signup = () => {
     const[username,setUsername]=useState("")
     const[email,setEmail]=useState("")
     const[password,setPassword]=useState("")
+    
 
     const handleSubmit=()=>{
        const userData={
@@ -22,7 +23,9 @@ export const Signup = () => {
        setUsername("")
        setEmail("")
        setPassword("")
+       
 
+       window.location.href = '/login';
     }
     
   return (

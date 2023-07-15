@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 export const Login = () => {
     const[email,setEmail]=useState("")
     const[password,setPassword]=useState("")
+  
 
     const handleSubmit=()=>{
        const userData={
@@ -23,6 +24,8 @@ export const Login = () => {
        .catch(err=>console.log(err))
        setEmail("")
        setPassword("") 
+
+       window.location.href = '/note';
     }
   return (
     <div>

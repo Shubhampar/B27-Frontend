@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 
+
 export const Note = () => {
     const[title,setTitle]=useState("")
     const[body,setBody]=useState("")
     const[category,setCategory]=useState("")
+    
 
     const handleSubmit=()=>{
         const noteData={
@@ -23,6 +25,8 @@ export const Note = () => {
        setBody("")
        setCategory("")
 
+       window.location.href = '/notes';
+       
     }
   return (
     <div>
